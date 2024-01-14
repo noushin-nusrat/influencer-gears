@@ -4,18 +4,22 @@
 * {
     font-family: 'Manrope', sans-serif;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #fff;
+    margin: 0 auto;
+    width: 1200px;
 }
 
+
+
 .btn-primary {
-    /* display: inline-flex; */
     padding: 10px 24px;
-    /* align-items: flex-start; */
     gap: 8px;
-    border-radius: 41px;
+    border-radius: 2.5rem;
     background: #E02C6D;
     border: none;
     color: #FFF;
@@ -29,7 +33,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 100px;
 }
 
 nav>ul {
@@ -50,26 +53,54 @@ nav li a {
 }
 
 /* banner style */
-.banner-content{
+.banner-section {
     display: flex;
-    padding: 5rem;
-}
-.banner-title {
-    color: #3A3A3A;
-    font-size: 3.25rem;
-    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8rem auto;
 }
 
-.section-description {
+.banner-section-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.3rem;
+}
+.banner-title{
+    font-size: 45px;
+}
+
+.banner-section-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/Circle\ design.svg)center center no-repeat;
+    background-size: contain;
+}
+
+/* main section style */
+
+/* sponsor section */
+.sponsor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* popular product style */
+.collection-section {
     color: #3A3A3A;
-    font-size: 1.5rem;
+    font-size: 28px;
     font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
 }
-.camera-img-container{
-    margin-left: 29rem;
-}
-.camera-img{
-    position: relative;
-    bottom: 28rem;
-    border: 2px solid blueviolet;
+
+.product-archive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
