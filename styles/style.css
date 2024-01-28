@@ -182,10 +182,56 @@ nav li a {
 /* features section style */
 .features-section{
     display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
 }
 .features-section-right{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .features-section-right{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+/* footer section styles */
+
+footer {
+    text-align: center;
+    background: #0A0826;
+    color: white;
+    margin-top: 80px;
+}
+
+footer h1 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+footer p {
+    color: var(--Text-Gray-300, #D9DBE1);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media-icons img {
+    width: 45px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
